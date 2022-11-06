@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto Slab", serif;
 }
 
@@ -19,13 +20,40 @@ canvas {
 
 main {
   position: absolute;
-  width: 100vw;
-  height: 200vh;
+  width: 100%;
+  height: 100%;
   z-index: 100;
   justify-content: center;
   text-align: center;
-  font-size: 4rem;
   margin-top: 70px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 20px 0;
+  white-space: nowrap;
+}
+
+p {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 60px;
+  }
+  
+  h2 {
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 30px;
+  }
 }
 
 section {
@@ -33,21 +61,3 @@ section {
   padding: 20px;
   font-size: 3.5rem;
 }
-
-/* .circles {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: #a6ddcd;
-}
-
-.circle {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.circle1 {
-  background: green;
-  width: 630px;
-  height: 630px;
-} */
